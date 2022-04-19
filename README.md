@@ -2,3 +2,4 @@
 
 # More and about
 as of current version ("Strawberry" and further) LowPY is ment to be more of a script editor than a entire ide like thing
+that doesnt mean you cannot write scripts in it but it isnt ideal
