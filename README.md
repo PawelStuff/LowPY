@@ -1,5 +1,5 @@
 <img src="https://cdn.discordapp.com/attachments/578453280405848064/965905027929636864/github_lowpy_label_thingy.png">
-test ; [test](#real-cool-heading) <br />
+[test](#real-cool-heading) <br />
 
 # More and about
 LowPY requires .NET Framework 6.0 installed (and for local install running Python 3.10)<br />
@@ -24,4 +24,3 @@ about the said script runner bellow <br />
 the script runner runs your currently loaded script into the editor, gives back syntax when the script contains a error <br />
 in case the "Script runner" doesnt work theres the "Run with local Python 3.10 install" option which as mentioned before <br />
 opens your local Python 3.10 install with the currently loaded script <br />
-[I'm an inline-style link](https://www.google.com)
