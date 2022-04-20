@@ -23,3 +23,4 @@ about the said script runner bellow <br />
 the script runner runs your currently loaded script into the editor, gives back syntax when the script contains a error <br />
 in case the "Script runner" doesnt work theres the "Run with local Python 3.10 install" option which as mentioned before <br />
 opens your local Python 3.10 install with the currently loaded script
+[I'm an inline-style link](https://www.google.com)
