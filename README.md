@@ -17,5 +17,6 @@ it contains your basic stuff like saving and of course executing <br />
 "Run with local Python 3.10 install" is in case the built in Script Runner doesnt work <br />
 about the said script runner bellow <br />
 <br />
+
 # Script runner
 <img src="https://cdn.discordapp.com/attachments/578453280405848064/966387402513977384/unknown.png">
