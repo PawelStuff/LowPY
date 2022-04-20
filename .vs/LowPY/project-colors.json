@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "726fb768-84fa-4883-9bbb-a5c05abd4fe4": {
+      "ProjectGuid": "726fb768-84fa-4883-9bbb-a5c05abd4fe4",
+      "DisplayName": "LowPY",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Różne pliki",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

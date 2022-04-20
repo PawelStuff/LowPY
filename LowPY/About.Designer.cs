@@ -42,7 +42,7 @@
             // lpyLogo
             // 
             this.lpyLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lpyLogo.Image = global::LowPY.Properties.Resources.lpy_logo;
+            this.lpyLogo.Image = global::LowPY.Properties.Resources.lpy_logo_2_35;
             this.lpyLogo.Location = new System.Drawing.Point(3, 3);
             this.lpyLogo.Name = "lpyLogo";
             this.lpyLogo.Size = new System.Drawing.Size(105, 101);
