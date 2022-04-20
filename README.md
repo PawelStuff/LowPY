@@ -1,5 +1,4 @@
 <img src="https://cdn.discordapp.com/attachments/578453280405848064/965905027929636864/github_lowpy_label_thingy.png">
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
 
 # More and about
 LowPY requires .NET Framework 6.0 installed (and for local install running Python 3.10)<br />
