@@ -22,5 +22,5 @@ about the said script runner bellow <br />
 <img src="https://cdn.discordapp.com/attachments/578453280405848064/966387402513977384/unknown.png">
 the script runner runs your currently loaded script into the editor, gives back syntax when the script contains a error <br />
 in case the "Script runner" doesnt work theres the "Run with local Python 3.10 install" option which as mentioned before <br />
-opens your local Python 3.10 install with the currently loaded script
+opens your local Python 3.10 install with the currently loaded script <br />
 [I'm an inline-style link](https://www.google.com)
