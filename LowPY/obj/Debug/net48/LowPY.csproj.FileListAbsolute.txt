@@ -1,0 +1,10 @@
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.csproj.AssemblyReference.cache
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.csproj.SuggestedBindingRedirects.cache
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.Editor.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.Menu.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.Properties.Resources.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.csproj.GenerateResource.cache
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.AssemblyInfoInputs.cache
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.AssemblyInfo.cs
+D:\VS Projects\LowPY\LowPY\obj\Debug\net48\LowPY.csproj.CoreCompileInputs.cache
