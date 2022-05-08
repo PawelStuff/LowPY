@@ -47,6 +47,7 @@ namespace LowPY
                 {
                     //Get the path of specified file
                     filePath = openFileDialog.FileName;
+                    Editor.writepath = filePath;
 
                     //Read the contents of the file into a stream
                     var fileStream = openFileDialog.OpenFile();
@@ -90,6 +91,7 @@ namespace LowPY
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 filePath = saveFileDialog1.FileName;
+                Editor.writepath = filePath;
 
                 if ((myStream = saveFileDialog1.OpenFile()) != null)
                 {

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.minimizeButton = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.pathText = new System.Windows.Forms.Label();
@@ -42,17 +43,22 @@
             this.status = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.localpyinstall = new System.Windows.Forms.Button();
             this.editorTextbox = new FastColoredTextBoxNS.FastColoredTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tkinterbutton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pytoexeButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.editorTextbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.minimizeButton);
             this.panel1.Controls.Add(this.menuButton);
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.pathText);
@@ -64,10 +70,22 @@
             this.panel1.Size = new System.Drawing.Size(1160, 72);
             this.panel1.TabIndex = 0;
             // 
+            // minimizeButton
+            // 
+            this.minimizeButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.minimizeButton.Location = new System.Drawing.Point(1103, 4);
+            this.minimizeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.minimizeButton.Name = "minimizeButton";
+            this.minimizeButton.Size = new System.Drawing.Size(22, 23);
+            this.minimizeButton.TabIndex = 5;
+            this.minimizeButton.Text = "_";
+            this.minimizeButton.UseVisualStyleBackColor = true;
+            this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
+            // 
             // menuButton
             // 
             this.menuButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuButton.Location = new System.Drawing.Point(1094, 4);
+            this.menuButton.Location = new System.Drawing.Point(1073, 4);
             this.menuButton.Margin = new System.Windows.Forms.Padding(4);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(22, 23);
@@ -123,7 +141,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.Font = new System.Drawing.Font("Segoe UI Light", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(1053, 125);
+            this.button1.Location = new System.Drawing.Point(1061, 130);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(72, 72);
@@ -136,7 +154,7 @@
             // 
             this.runButton.BackColor = System.Drawing.Color.Gray;
             this.runButton.Font = new System.Drawing.Font("Segoe UI Light", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.runButton.Location = new System.Drawing.Point(1052, 498);
+            this.runButton.Location = new System.Drawing.Point(1062, 229);
             this.runButton.Margin = new System.Windows.Forms.Padding(4);
             this.runButton.Name = "runButton";
             this.runButton.Size = new System.Drawing.Size(72, 72);
@@ -174,7 +192,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Gray;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(1053, 101);
+            this.label3.Location = new System.Drawing.Point(1062, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 19);
             this.label3.TabIndex = 7;
@@ -185,27 +203,16 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Gray;
             this.label4.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(1053, 475);
+            this.label4.Location = new System.Drawing.Point(1061, 206);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 19);
             this.label4.TabIndex = 8;
             this.label4.Text = "Executing";
             // 
-            // localpyinstall
-            // 
-            this.localpyinstall.BackColor = System.Drawing.Color.Gray;
-            this.localpyinstall.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.localpyinstall.Location = new System.Drawing.Point(1052, 578);
-            this.localpyinstall.Margin = new System.Windows.Forms.Padding(4);
-            this.localpyinstall.Name = "localpyinstall";
-            this.localpyinstall.Size = new System.Drawing.Size(72, 72);
-            this.localpyinstall.TabIndex = 9;
-            this.localpyinstall.Text = "Run with local Python 3.10 install";
-            this.localpyinstall.UseVisualStyleBackColor = false;
-            this.localpyinstall.Click += new System.EventHandler(this.localpyinstall_Click);
-            // 
             // editorTextbox
             // 
+            this.editorTextbox.AllowSeveralTextStyleDrawing = true;
+            this.editorTextbox.AutoCompleteBrackets = true;
             this.editorTextbox.AutoCompleteBracketsList = new char[] {
         '(',
         ')',
@@ -217,29 +224,84 @@
         '\"',
         '\'',
         '\''};
-            this.editorTextbox.AutoScrollMinSize = new System.Drawing.Size(241, 18);
+            this.editorTextbox.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>.+)\r\n";
+            this.editorTextbox.AutoScrollMinSize = new System.Drawing.Size(31, 18);
             this.editorTextbox.BackBrush = null;
             this.editorTextbox.BackColor = System.Drawing.Color.DimGray;
+            this.editorTextbox.BracketsHighlightStrategy = FastColoredTextBoxNS.BracketsHighlightStrategy.Strategy2;
             this.editorTextbox.CharHeight = 18;
             this.editorTextbox.CharWidth = 10;
             this.editorTextbox.CommentPrefix = "#";
+            this.editorTextbox.CurrentLineColor = System.Drawing.Color.DarkGray;
             this.editorTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.editorTextbox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.editorTextbox.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.editorTextbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.editorTextbox.IndentBackColor = System.Drawing.Color.Gray;
             this.editorTextbox.IsReplaceMode = false;
+            this.editorTextbox.LeftBracket = '(';
+            this.editorTextbox.LeftBracket2 = '{';
             this.editorTextbox.LineNumberColor = System.Drawing.Color.Aquamarine;
             this.editorTextbox.Location = new System.Drawing.Point(12, 101);
             this.editorTextbox.Name = "editorTextbox";
             this.editorTextbox.Paddings = new System.Windows.Forms.Padding(0);
+            this.editorTextbox.RightBracket = ')';
+            this.editorTextbox.RightBracket2 = '}';
             this.editorTextbox.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.editorTextbox.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("editorTextbox.ServiceColors")));
             this.editorTextbox.ServiceLinesColor = System.Drawing.Color.DarkGray;
+            this.editorTextbox.ShowFoldingLines = true;
             this.editorTextbox.Size = new System.Drawing.Size(1033, 550);
             this.editorTextbox.TabIndex = 10;
-            this.editorTextbox.Text = "print(\"hello lowpy!\")";
             this.editorTextbox.Zoom = 100;
+            this.editorTextbox.Load += new System.EventHandler(this.editorTextbox_Load);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::LowPY.Properties.Resources.gradient_bar;
+            this.pictureBox2.Location = new System.Drawing.Point(1051, -2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(93, 686);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // tkinterbutton
+            // 
+            this.tkinterbutton.BackColor = System.Drawing.Color.Gray;
+            this.tkinterbutton.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tkinterbutton.Location = new System.Drawing.Point(1061, 309);
+            this.tkinterbutton.Margin = new System.Windows.Forms.Padding(4);
+            this.tkinterbutton.Name = "tkinterbutton";
+            this.tkinterbutton.Size = new System.Drawing.Size(72, 72);
+            this.tkinterbutton.TabIndex = 12;
+            this.tkinterbutton.Text = "Run on TKinter mode";
+            this.tkinterbutton.UseVisualStyleBackColor = false;
+            this.tkinterbutton.Click += new System.EventHandler(this.tkinterbutton_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Gray;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(1062, 385);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 19);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Utilities";
+            // 
+            // pytoexeButton
+            // 
+            this.pytoexeButton.BackColor = System.Drawing.Color.Gray;
+            this.pytoexeButton.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pytoexeButton.Location = new System.Drawing.Point(1061, 408);
+            this.pytoexeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.pytoexeButton.Name = "pytoexeButton";
+            this.pytoexeButton.Size = new System.Drawing.Size(72, 72);
+            this.pytoexeButton.TabIndex = 14;
+            this.pytoexeButton.Text = ".py to .exe\r\n(PyInstaller)\r\n";
+            this.pytoexeButton.UseVisualStyleBackColor = false;
+            this.pytoexeButton.Click += new System.EventHandler(this.pytoexeButton_Click);
             // 
             // Editor
             // 
@@ -248,15 +310,18 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1156, 682);
+            this.Controls.Add(this.pytoexeButton);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tkinterbutton);
             this.Controls.Add(this.editorTextbox);
-            this.Controls.Add(this.localpyinstall);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.status);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.runButton);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Segoe UI Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -270,6 +335,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.editorTextbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,7 +355,11 @@
         private Label status;
         private Label label3;
         private Label label4;
-        private Button localpyinstall;
         private FastColoredTextBoxNS.FastColoredTextBox editorTextbox;
+        private PictureBox pictureBox2;
+        private Button tkinterbutton;
+        private Button minimizeButton;
+        private Label label5;
+        private Button pytoexeButton;
     }
 }

@@ -9,6 +9,7 @@ using System.IO;
 
 using IronPython.Hosting;
 using LowPY;
+using System.Diagnostics;
 
 namespace DevLeader.IronPython.WinForms
 {
@@ -219,6 +220,36 @@ namespace DevLeader.IronPython.WinForms
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.TopMost = true;
+        }
+
+        private void localpyinstall_Click(object sender, EventArgs e)
+        {
+            string localappdata = Environment.GetEnvironmentVariable("LocalAppData");
+
+            string pythonpath = localappdata + @"\Programs\Python\Python310\python.exe";
+
+            string writepath = Editor.writepath;
+
+            if (File.Exists(pythonpath))
+            {
+
+                if (File.Exists(writepath))
+                {
+
+                    Process.Start(pythonpath, writepath);
+
+                    txtOutput.Text += "\nStarted Python.exe with " + writepath + " ..\n";
+
+                }
+
+            }
+
+            else
+            {
+
+                txtOutput.Text += "\nCould not validate a python install, install python 3.10 from https://www.python.org/ \n";
+
+            }
         }
     }
 }

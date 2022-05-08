@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using DevLeader.IronPython.WinForms;
-using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using FastColoredTextBoxNS;
+using DiscordRPC;
 
 namespace LowPY
 {
@@ -23,7 +23,7 @@ namespace LowPY
         private static Process InterProc;
 
         float timesclicked = 0;
-
+        private DiscordRpcClient client;
 
         public Editor()
         {
@@ -33,13 +33,32 @@ namespace LowPY
         }
 
         private void Editor_Load(object sender, EventArgs e)
-        {
+        {           
             this.TopMost = true;
             pathText.Text = Menu.filePath;
 
             string readfile = File.ReadAllText(Menu.filePath);
 
             editorTextbox.Text = readfile;
+
+            string filename = Path.GetFileName(writepath);
+
+            client = new DiscordRpcClient("972488504611332186");
+            client.Initialize();
+
+            client.SetPresence(new RichPresence()
+            {
+                Details = "Doing Python stuff..",
+                State = "Editing file : " + filename,
+                
+                Assets = new Assets()
+                {
+                    LargeImageKey = "lpy_logo",
+                    LargeImageText = "https://github.com/zeropixx/LowPY",
+                    //SmallImageKey = "lpy_logo"
+                }
+            });
+
         }
 
         protected override void WndProc(ref Message m) // this motherfucker makes shit dragable
@@ -68,6 +87,9 @@ namespace LowPY
 
         private void menuButton_Click(object sender, EventArgs e)
         {
+            Menu.filePath = null;
+            Editor.writepath = null;
+
             this.Hide();
 
             var menu = new Menu();
@@ -112,37 +134,6 @@ namespace LowPY
 
         }
 
-        private void localpyinstall_Click(object sender, EventArgs e)
-        {
-            string localappdata = Environment.GetEnvironmentVariable("LocalAppData");
-
-            string pythonpath = localappdata + @"\Programs\Python\Python310\python.exe";
-
-            if (File.Exists(pythonpath))
-            {
-
-                status.Text = pythonpath + " is valid ..";
-
-                if (File.Exists(writepath))
-                {
-                    status.Text = writepath + " is valid ..";
-
-                    Process.Start(pythonpath, writepath);
-
-                    status.Text = "Started Python.exe with " + writepath + " ..";
-
-                }
-
-            }
-
-            else
-            {
-
-                status.Text = "Could not validate a python install, install python 3.10 from https://www.python.org/";
-
-            }
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -160,13 +151,125 @@ namespace LowPY
 
         }
 
-        private void editorTextbox_TextChanged(object sender, EventArgs e)
+        //
+
+        private void editorTextbox_TextChanged(object sender, TextChangedEventArgs e)
         {
             Style GreenStyle = new TextStyle(Brushes.Green, null, FontStyle.Italic);
 
-            
+
+            e.ChangedRange.ClearStyle(GreenStyle);
+            //comment highlighting
+            e.ChangedRange.SetStyle(GreenStyle, @"//.*$", RegexOptions.Multiline);
+
         }
 
+        private void tkinterbutton_Click(object sender, EventArgs e)
+        {
+            string localappdata = Environment.GetEnvironmentVariable("LocalAppData");
+
+            string pythonpath = localappdata + @"\Programs\Python\Python310\python.exe";
+
+            string writepath = Editor.writepath;
+
+            status.Text = "Running Py.exe with " + writepath + " ..";
+
+
+            if (File.Exists(pythonpath))
+            {
+
+                if (File.Exists(writepath))
+                {
+
+                    var timedout = 0;
+
+                    Process.Start(pythonpath, writepath);
+
+                    status.Text += "\nStarted Python.exe with " + writepath + " ..\n";
+
+                    status.Text = "Waiting 1 seconds for TKinter build..";
+
+                    Pywait();
+
+                    void Pywait()
+                    {
+
+                        var t = Task.Delay(1000); //1 second/1000 ms
+                        t.Wait();
+
+                        timedout += 1;
+
+                    }
+
+                    FileInfo fileInfo = new FileInfo(writepath);
+                    string buildpath = fileInfo.DirectoryName; // contains "C:\MyDirectory"
+
+                    buildpath += @"\__pycache__";
+
+                    if (Directory.Exists(buildpath))
+                    {
+                        status.Text = "TKinter wait finished..";
+
+                        status.Text = "PyCache is ; " + buildpath + " ..";
+
+                        buildpath += @"\tkinter.cpython-310.pyc";
+
+                        Process.Start(pythonpath, buildpath);
+
+                        status.Text = "Started compiled TKinter build ; " + buildpath + " ..";
+
+                    }
+                    else
+                    {
+                        status.Text = "TKinter has not finished building.. starting wait";
+
+                        Pywait();
+                    }
+
+
+
+                }
+
+            }
+
+            else
+            {
+
+                status.Text += "\nCould not validate a python install, install python 3.10 from https://www.python.org/ \n";
+
+            }
+        }
+
+        private void minimizeButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void editorTextbox_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pytoexeButton_Click(object sender, EventArgs e)
+        {
+            var builder = new pytoexebuilder();         
+
+            if (File.Exists(@"ref/pybuildersetupdone"))
+            {
+                builder.Show();
+
+            }
+
+            else
+            {
+
+                var pyinstallsetup = new pytoexesetup();
+
+                pyinstallsetup.Show();
+
+            }
+
+        }
     }
 }
  

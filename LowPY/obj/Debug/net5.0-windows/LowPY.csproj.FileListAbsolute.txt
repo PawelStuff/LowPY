@@ -1,0 +1,11 @@
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.csproj.AssemblyReference.cache
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.About.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.Editor.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\DevLeader.IronPython.WinForms.MainForm.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.Menu.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.Properties.Resources.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.csproj.GenerateResource.cache
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.AssemblyInfoInputs.cache
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.AssemblyInfo.cs
+D:\VS Projects\LowPY\LowPY\obj\Debug\net5.0-windows\LowPY.csproj.CoreCompileInputs.cache

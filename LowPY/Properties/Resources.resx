@@ -121,4 +121,10 @@
   <data name="lpy_logo_2_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lpy_logo_2_35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pobrane (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pobrane (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gradient bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gradient bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -63,9 +63,29 @@ namespace LowPY.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gradient_bar {
+            get {
+                object obj = ResourceManager.GetObject("gradient bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lpy_logo_2_35 {
             get {
                 object obj = ResourceManager.GetObject("lpy_logo_2_35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pobrane__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pobrane (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
