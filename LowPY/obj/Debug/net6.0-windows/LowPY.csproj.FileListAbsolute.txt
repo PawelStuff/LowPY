@@ -36,3 +36,4 @@ D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.csproj.AssemblyReferen
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.help.resources
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.editorhelp.resources
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.scriptrunnerhelp.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.tkinterhelp.resources

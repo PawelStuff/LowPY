@@ -39,5 +39,14 @@ namespace LowPY.helpforms
 
             this.Hide();
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var tkhelp = new helpforms.tkinterhelp();
+
+            tkhelp.Show();
+
+            this.Hide();
+        }
     }
 }

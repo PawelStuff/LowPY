@@ -16,6 +16,9 @@
     <Compile Update="helpforms\scriptrunnerhelp.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="helpforms\tkinterhelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
