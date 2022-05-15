@@ -48,5 +48,14 @@ namespace LowPY.helpforms
 
             this.Hide();
         }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var pytoexehelp = new helpforms.pytoexehelp();
+
+            pytoexehelp.Show();
+
+            this.Hide();
+        }
     }
 }
