@@ -62,7 +62,7 @@
             this.cmdRunScript.Name = "cmdRunScript";
             this.cmdRunScript.Size = new System.Drawing.Size(164, 54);
             this.cmdRunScript.TabIndex = 2;
-            this.cmdRunScript.Text = "Run Open Script";
+            this.cmdRunScript.Text = "Run Open Script\r\n(embeded engine)";
             this.cmdRunScript.UseVisualStyleBackColor = true;
             this.cmdRunScript.Click += new System.EventHandler(this.CmdRunScript_Click);
             // 

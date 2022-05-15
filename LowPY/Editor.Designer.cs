@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
@@ -48,6 +49,7 @@
             this.tkinterbutton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pytoexeButton = new System.Windows.Forms.Button();
+            this.pythonconsoleButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.editorTextbox)).BeginInit();
@@ -58,6 +60,7 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.minimizeButton);
             this.panel1.Controls.Add(this.menuButton);
             this.panel1.Controls.Add(this.exitButton);
@@ -69,6 +72,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1160, 72);
             this.panel1.TabIndex = 0;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Light", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.Location = new System.Drawing.Point(1025, 42);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(121, 25);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Help / Manual";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // minimizeButton
             // 
@@ -224,14 +239,13 @@
         '\"',
         '\'',
         '\''};
-            this.editorTextbox.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>.+)\r\n";
-            this.editorTextbox.AutoScrollMinSize = new System.Drawing.Size(31, 18);
+            this.editorTextbox.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>[^;]+);\r\n";
+            this.editorTextbox.AutoScrollMinSize = new System.Drawing.Size(241, 18);
             this.editorTextbox.BackBrush = null;
             this.editorTextbox.BackColor = System.Drawing.Color.DimGray;
             this.editorTextbox.BracketsHighlightStrategy = FastColoredTextBoxNS.BracketsHighlightStrategy.Strategy2;
             this.editorTextbox.CharHeight = 18;
             this.editorTextbox.CharWidth = 10;
-            this.editorTextbox.CommentPrefix = "#";
             this.editorTextbox.CurrentLineColor = System.Drawing.Color.DarkGray;
             this.editorTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.editorTextbox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -239,6 +253,7 @@
             this.editorTextbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.editorTextbox.IndentBackColor = System.Drawing.Color.Gray;
             this.editorTextbox.IsReplaceMode = false;
+            this.editorTextbox.Language = FastColoredTextBoxNS.Language.Lua;
             this.editorTextbox.LeftBracket = '(';
             this.editorTextbox.LeftBracket2 = '{';
             this.editorTextbox.LineNumberColor = System.Drawing.Color.Aquamarine;
@@ -253,8 +268,8 @@
             this.editorTextbox.ShowFoldingLines = true;
             this.editorTextbox.Size = new System.Drawing.Size(1033, 550);
             this.editorTextbox.TabIndex = 10;
+            this.editorTextbox.Text = "print(\"hello LowPY!\")";
             this.editorTextbox.Zoom = 100;
-            this.editorTextbox.Load += new System.EventHandler(this.editorTextbox_Load);
             // 
             // pictureBox2
             // 
@@ -303,6 +318,19 @@
             this.pytoexeButton.UseVisualStyleBackColor = false;
             this.pytoexeButton.Click += new System.EventHandler(this.pytoexeButton_Click);
             // 
+            // pythonconsoleButton
+            // 
+            this.pythonconsoleButton.BackColor = System.Drawing.Color.Gray;
+            this.pythonconsoleButton.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pythonconsoleButton.Location = new System.Drawing.Point(1061, 488);
+            this.pythonconsoleButton.Margin = new System.Windows.Forms.Padding(4);
+            this.pythonconsoleButton.Name = "pythonconsoleButton";
+            this.pythonconsoleButton.Size = new System.Drawing.Size(72, 72);
+            this.pythonconsoleButton.TabIndex = 15;
+            this.pythonconsoleButton.Text = "Open Python Console";
+            this.pythonconsoleButton.UseVisualStyleBackColor = false;
+            this.pythonconsoleButton.Click += new System.EventHandler(this.pythonconsoleButton_Click_1);
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 37F);
@@ -310,6 +338,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1156, 682);
+            this.Controls.Add(this.pythonconsoleButton);
             this.Controls.Add(this.pytoexeButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tkinterbutton);
@@ -329,7 +358,7 @@
             this.Name = "Editor";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LowPY - Editor";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Editor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -361,5 +390,7 @@
         private Button minimizeButton;
         private Label label5;
         private Button pytoexeButton;
+        private LinkLabel linkLabel1;
+        private Button pythonconsoleButton;
     }
 }

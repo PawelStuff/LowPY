@@ -7,6 +7,15 @@
     <Compile Update="Editor.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="helpforms\editorhelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="helpforms\help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="helpforms\scriptrunnerhelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

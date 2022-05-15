@@ -245,11 +245,6 @@ namespace LowPY
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void editorTextbox_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void pytoexeButton_Click(object sender, EventArgs e)
         {
             var builder = new pytoexebuilder();         
@@ -268,6 +263,30 @@ namespace LowPY
                 pyinstallsetup.Show();
 
             }
+
+        }
+
+        private void pythonconsoleButton_Click_1(object sender, EventArgs e)
+        {
+            string localappdata = Environment.GetEnvironmentVariable("LocalAppData");
+            string pythonpath = localappdata + @"\Programs\Python\Python310\python.exe";
+
+            if (File.Exists(pythonpath))
+            {
+
+                Process.Start(pythonpath);
+
+                status.Text = "Started the Python console (python.exe) ..";
+
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var about = new helpforms.help();
+
+            about.Show();
+
 
         }
     }
