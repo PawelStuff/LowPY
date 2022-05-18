@@ -168,53 +168,67 @@ namespace LowPY
 
                 if (File.Exists(writepath))
                 {
+                    string filename = Path.GetFileName(writepath);
 
-                    var timedout = 0;
-
-                    Process.Start(pythonpath, writepath);
-
-                    status.Text += "\nStarted Python.exe with " + writepath + " ..\n";
-
-                    status.Text = "Waiting 1 seconds for TKinter build..";
-
-                    Pywait();
-
-                    void Pywait()
+                    if (filename.Contains(" "))
                     {
-
-                        var t = Task.Delay(1000); //1 second/1000 ms
-                        t.Wait();
-
-                        timedout += 1;
-
-                    }
-
-                    FileInfo fileInfo = new FileInfo(writepath);
-                    string buildpath = fileInfo.DirectoryName; // contains "C:\MyDirectory"
-
-                    buildpath += @"\__pycache__";
-
-                    if (Directory.Exists(buildpath))
-                    {
-                        status.Text = "TKinter wait finished..";
-
-                        status.Text = "PyCache is ; " + buildpath + " ..";
-
-                        buildpath += @"\tkinter.cpython-310.pyc";
-
-                        Process.Start(pythonpath, buildpath);
-
-                        status.Text = "Started compiled TKinter build ; " + buildpath + " ..";
-
+                        MessageBox.Show("Cannot read filename\nLowPY cant read filenames with spaces in TKinter mode\nrename your file to not contain spaces to use TKinter mode");
                     }
                     else
                     {
-                        status.Text = "TKinter has not finished building.. starting wait";
+                        spacecheckpassed();
 
-                        Pywait();
+                        void spacecheckpassed()
+                        {
+
+                            var timedout = 0;
+
+                            Process.Start(pythonpath, writepath);
+
+                            status.Text += "\nStarted Python.exe with " + writepath + " ..\n";
+
+                            status.Text = "Waiting 1 seconds for TKinter build..";
+
+                            Pywait();
+
+                            void Pywait()
+                            {
+
+                                var t = Task.Delay(1000); //1 second/1000 ms
+                                t.Wait();
+
+                                timedout += 1;
+
+                            }
+
+                            FileInfo fileInfo = new FileInfo(writepath);
+                            string buildpath = fileInfo.DirectoryName; // contains "C:\MyDirectory"
+
+                            buildpath += @"\__pycache__";
+
+                            if (Directory.Exists(buildpath))
+                            {
+                                status.Text = "TKinter wait finished..";
+
+                                status.Text = "PyCache is ; " + buildpath + " ..";
+
+                                buildpath += @"\tkinter.cpython-310.pyc";
+
+                                Process.Start(pythonpath, buildpath);
+
+                                status.Text = "Started compiled TKinter build ; " + buildpath + " ..";
+
+                            }
+                            else
+                            {
+                                status.Text = "TKinter has not finished building.. starting wait";
+
+                                Pywait();
+                            }
+
+                        }
+
                     }
-
-
 
                 }
 

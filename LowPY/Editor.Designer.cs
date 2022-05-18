@@ -186,7 +186,7 @@
             this.label2.BackColor = System.Drawing.Color.Gray;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(0, 654);
+            this.label2.Location = new System.Drawing.Point(12, 654);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 19);
             this.label2.TabIndex = 5;
@@ -198,7 +198,7 @@
             this.status.BackColor = System.Drawing.Color.Gray;
             this.status.Font = new System.Drawing.Font("Segoe UI Light", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.status.ForeColor = System.Drawing.Color.Lime;
-            this.status.Location = new System.Drawing.Point(56, 654);
+            this.status.Location = new System.Drawing.Point(68, 654);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(30, 19);
             this.status.TabIndex = 6;
@@ -241,7 +241,7 @@
         '\"',
         '\'',
         '\''};
-            this.editorTextbox.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>)\\s*(?<range>.+)\r\n";
+            this.editorTextbox.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>.+)\r\n";
             this.editorTextbox.AutoScrollMinSize = new System.Drawing.Size(241, 18);
             this.editorTextbox.BackBrush = null;
             this.editorTextbox.BackColor = System.Drawing.Color.DimGray;

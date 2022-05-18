@@ -58,16 +58,82 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>The TKinter mode is used to run TKinter scripts (duh)
+    <value>LowPY is using FCTB for its lined textbox and
+other easy-to-use goods
+(https://www.codeproject.com/Articles/161871/Fast-Colored-TextBox-for-syntax-highlighting-2)
 
-it functions similar to the "Run with local Python 3.10 Install"
-option but instead it runs the compiled .pyc file that
-python.exe gives back
+within that hotkeys
+(example : ctrl + z = undo)
 
-TKinter mode cannot read filenames with spaces
+The full hotkey list (FCTB default)  :
 
-full route : Locate python install &gt; start py.exe
- &gt; wait for build &lt; if didnt finish builiding 
- &gt; if finished build run .pyc file</value>
+Tab=IndentIncrease,
+Escape=ClearHints,
+PgUp=GoPageUp,
+PgDn=GoPageDown,
+End=GoEnd,
+Home=GoHome,
+Left=GoLeft,
+Up=GoUp,
+Right=GoRight,
+Down=GoDown,
+Ins=ReplaceMode,
+Del=DeleteCharRight,
+F3=FindNext,
+Shift+Tab=IndentDecrease,
+Shift+PgUp=GoPageUpWithSelection,
+Shift+PgDn=GoPageDownWithSelection,
+Shift+End=GoEndWithSelection,
+Shift+Home=GoHomeWithSelection,
+Shift+Left=GoLeftWithSelection,
+Shift+Up=GoUpWithSelection,
+Shift+Right=GoRightWithSelection,
+Shift+Down=GoDownWithSelection,
+Shift+Ins=Paste,
+Shift+Del=Cut,
+Ctrl+Back=ClearWordLeft,
+Ctrl+Space=AutocompleteMenu,
+Ctrl+End=GoLastLine,
+Ctrl+Home=GoFirstLine,
+Ctrl+Left=GoWordLeft,
+Ctrl+Up=ScrollUp,
+Ctrl+Right=GoWordRight,
+Ctrl+Down=ScrollDown,
+Ctrl+Ins=Copy,
+Ctrl+Del=ClearWordRight,
+Ctrl+0=ZoomNormal,
+Ctrl+A=SelectAll,
+Ctrl+B=BookmarkLine,
+Ctrl+C=Copy,
+Ctrl+E=MacroExecute,
+Ctrl+F=FindDialog,
+Ctrl+G=GoToDialog,
+Ctrl+H=ReplaceDialog,
+Ctrl+I=AutoIndentChars,
+Ctrl+M=MacroRecord,
+Ctrl+N=GoNextBookmark,
+Ctrl+R=Redo,
+Ctrl+U=UpperCase,
+Ctrl+V=Paste,
+Ctrl+X=Cut,
+Ctrl+Z=Undo,
+Ctrl+Add=ZoomIn,
+Ctrl+Subtract=ZoomOut,
+Ctrl+OemMinus=NavigateBackward,
+Ctrl+Shift+End=GoLastLineWithSelection,
+Ctrl+Shift+Home=GoFirstLineWithSelection,
+Ctrl+Shift+Left=GoWordLeftWithSelection,
+Ctrl+Shift+Right=GoWordRightWithSelection,
+Ctrl+Shift+B=UnbookmarkLine,
+Ctrl+Shift+C=CommentSelected,
+Ctrl+Shift+N=GoPrevBookmark,
+Ctrl+Shift+U=LowerCase,
+Ctrl+Shift+OemMinus=NavigateForward,
+Alt+Back=Undo, Alt+Up=MoveSelectedLinesUp,
+Alt+Down=MoveSelectedLinesDown, Alt+F=FindChar,
+Alt+Shift+Left=GoLeft_ColumnSelectionMode,
+Alt+Shift+Up=GoUp_ColumnSelectionMode,
+Alt+Shift+Right=GoRight_ColumnSelectionMode,
+Alt+Shift+Down=GoDown_ColumnSelectionMode</value>
   </data>
 </root>

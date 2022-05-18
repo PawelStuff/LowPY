@@ -13,6 +13,11 @@ using System.Diagnostics;
 
 namespace DevLeader.IronPython.WinForms
 {
+    // just to be clear afterwards, ive had too many failed tries writing my own python thing so i take this one from :
+    // https://www.codeproject.com/articles/755977/ironpython-a-quick-winforms-introduction
+    // and ive modified it to my needs
+
+
     /// <summary>
     /// A form that allows users to execute Python scripts from a file or from 
     /// entering them manually on the form.
@@ -23,11 +28,7 @@ namespace DevLeader.IronPython.WinForms
         /// <summary>
         /// Initializes a new instance of the <see cref="MainForm"/> class.
         /// </summary>
-        /// 
-
-        // just to be clear afterwards, ive had too many failed tries writing my own python thing so i take this one from :
-        // https://www.codeproject.com/articles/755977/ironpython-a-quick-winforms-introduction
-        // and ive modified it to my needs
+        ///    
 
         public MainForm()
         {
@@ -63,7 +64,7 @@ namespace DevLeader.IronPython.WinForms
                 using (var writer = new StreamWriter(outputStream))
                 {
                     writer.WriteLine(
-                        "Oops! There was an exception while running the script:\r\n" +
+                        "Exception Catched! (Something went wrong):\r\n" +
                         ex.Message + "\r\n\r\n" + ex.StackTrace);
                 }
             }

@@ -37,3 +37,4 @@ D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.editorhelp.r
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.scriptrunnerhelp.resources
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.tkinterhelp.resources
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.pytoexehelp.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.fctbhelp.resources

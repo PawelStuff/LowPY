@@ -57,5 +57,14 @@ namespace LowPY.helpforms
 
             this.Hide();
         }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var fctb = new helpforms.fctbhelp();
+
+            fctb.Show();
+
+            this.Hide();
+        }
     }
 }
