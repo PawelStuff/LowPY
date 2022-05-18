@@ -30,6 +30,7 @@ namespace LowPY
             InitializeComponent();
 
             System.Diagnostics.Process InterProc = new System.Diagnostics.Process();
+
         }
 
         private void Editor_Load(object sender, EventArgs e)
@@ -148,19 +149,6 @@ namespace LowPY
 
             }
 
-
-        }
-
-        //
-
-        private void editorTextbox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Style GreenStyle = new TextStyle(Brushes.Green, null, FontStyle.Italic);
-
-
-            e.ChangedRange.ClearStyle(GreenStyle);
-            //comment highlighting
-            e.ChangedRange.SetStyle(GreenStyle, @"//.*$", RegexOptions.Multiline);
 
         }
 
@@ -287,6 +275,11 @@ namespace LowPY
 
             about.Show();
 
+
+        }
+
+        private void editorTextbox_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -109,12 +109,13 @@
             // 
             // buildButton
             // 
+            this.buildButton.BackColor = System.Drawing.Color.Gray;
             this.buildButton.Location = new System.Drawing.Point(13, 99);
             this.buildButton.Name = "buildButton";
             this.buildButton.Size = new System.Drawing.Size(272, 67);
             this.buildButton.TabIndex = 9;
             this.buildButton.Text = "Build";
-            this.buildButton.UseVisualStyleBackColor = true;
+            this.buildButton.UseVisualStyleBackColor = false;
             this.buildButton.Click += new System.EventHandler(this.buildButton_Click_1);
             // 
             // linkLabel1

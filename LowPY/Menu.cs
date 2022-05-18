@@ -22,16 +22,6 @@ namespace LowPY
 
         private void lpyLogo_Click(object sender, EventArgs e)
         {
-            timesclicked += 1;
-
-            if (timesclicked == 5)
-            {
-
-                var about = new About();
-
-                about.Show();
-
-            }
         }
 
         private void openButton_Click(object sender, EventArgs e)

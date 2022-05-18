@@ -154,8 +154,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.BackColor = System.Drawing.Color.BlueViolet;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Segoe UI Light", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Location = new System.Drawing.Point(1061, 130);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
@@ -167,7 +169,7 @@
             // 
             // runButton
             // 
-            this.runButton.BackColor = System.Drawing.Color.Gray;
+            this.runButton.BackColor = System.Drawing.Color.SlateBlue;
             this.runButton.Font = new System.Drawing.Font("Segoe UI Light", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.runButton.Location = new System.Drawing.Point(1062, 229);
             this.runButton.Margin = new System.Windows.Forms.Padding(4);
@@ -205,7 +207,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Gray;
+            this.label3.BackColor = System.Drawing.Color.DarkOrchid;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(1062, 107);
             this.label3.Name = "label3";
@@ -216,7 +218,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gray;
+            this.label4.BackColor = System.Drawing.Color.BlueViolet;
             this.label4.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(1061, 206);
             this.label4.Name = "label4";
@@ -239,13 +241,14 @@
         '\"',
         '\'',
         '\''};
-            this.editorTextbox.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>[^;]+);\r\n";
+            this.editorTextbox.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>)\\s*(?<range>.+)\r\n";
             this.editorTextbox.AutoScrollMinSize = new System.Drawing.Size(241, 18);
             this.editorTextbox.BackBrush = null;
             this.editorTextbox.BackColor = System.Drawing.Color.DimGray;
             this.editorTextbox.BracketsHighlightStrategy = FastColoredTextBoxNS.BracketsHighlightStrategy.Strategy2;
             this.editorTextbox.CharHeight = 18;
             this.editorTextbox.CharWidth = 10;
+            this.editorTextbox.CommentPrefix = "--";
             this.editorTextbox.CurrentLineColor = System.Drawing.Color.DarkGray;
             this.editorTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.editorTextbox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -270,6 +273,7 @@
             this.editorTextbox.TabIndex = 10;
             this.editorTextbox.Text = "print(\"hello LowPY!\")";
             this.editorTextbox.Zoom = 100;
+            this.editorTextbox.Load += new System.EventHandler(this.editorTextbox_Load);
             // 
             // pictureBox2
             // 
@@ -283,7 +287,7 @@
             // 
             // tkinterbutton
             // 
-            this.tkinterbutton.BackColor = System.Drawing.Color.Gray;
+            this.tkinterbutton.BackColor = System.Drawing.Color.SandyBrown;
             this.tkinterbutton.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tkinterbutton.Location = new System.Drawing.Point(1061, 309);
             this.tkinterbutton.Margin = new System.Windows.Forms.Padding(4);
@@ -297,7 +301,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Gray;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(1062, 385);
             this.label5.Name = "label5";
@@ -307,12 +311,12 @@
             // 
             // pytoexeButton
             // 
-            this.pytoexeButton.BackColor = System.Drawing.Color.Gray;
+            this.pytoexeButton.BackColor = System.Drawing.Color.Coral;
             this.pytoexeButton.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pytoexeButton.Location = new System.Drawing.Point(1061, 408);
             this.pytoexeButton.Margin = new System.Windows.Forms.Padding(4);
             this.pytoexeButton.Name = "pytoexeButton";
-            this.pytoexeButton.Size = new System.Drawing.Size(72, 72);
+            this.pytoexeButton.Size = new System.Drawing.Size(73, 72);
             this.pytoexeButton.TabIndex = 14;
             this.pytoexeButton.Text = ".py to .exe\r\n(PyInstaller)\r\n";
             this.pytoexeButton.UseVisualStyleBackColor = false;
@@ -320,7 +324,7 @@
             // 
             // pythonconsoleButton
             // 
-            this.pythonconsoleButton.BackColor = System.Drawing.Color.Gray;
+            this.pythonconsoleButton.BackColor = System.Drawing.Color.Crimson;
             this.pythonconsoleButton.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pythonconsoleButton.Location = new System.Drawing.Point(1061, 488);
             this.pythonconsoleButton.Margin = new System.Windows.Forms.Padding(4);
@@ -392,5 +396,14 @@
         private Button pytoexeButton;
         private LinkLabel linkLabel1;
         private Button pythonconsoleButton;
+
+
+        // bacon is cool
+        // blue's a traitor
+        // it was cool to talk in the 128bb
+        // https://cdn.discordapp.com/attachments/968932491853438976/975834117633622067/noice.gif
+        // "well its named that because i like strawberries"
+
+
     }
 }

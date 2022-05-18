@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             this.lpyLogo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,9 +43,9 @@
             // 
             this.lpyLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lpyLogo.Image = global::LowPY.Properties.Resources.lpy_logo_2_35;
-            this.lpyLogo.Location = new System.Drawing.Point(3, 3);
+            this.lpyLogo.Location = new System.Drawing.Point(16, 12);
             this.lpyLogo.Name = "lpyLogo";
-            this.lpyLogo.Size = new System.Drawing.Size(105, 101);
+            this.lpyLogo.Size = new System.Drawing.Size(92, 88);
             this.lpyLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.lpyLogo.TabIndex = 4;
             this.lpyLogo.TabStop = false;
@@ -53,33 +53,36 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lpyLogo);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(257, 361);
+            this.panel1.Size = new System.Drawing.Size(242, 361);
             this.panel1.TabIndex = 5;
             // 
-            // label3
+            // textBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.DarkGray;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Light", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(3, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 180);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "originaly on :\r\nhttps://github.com/zeropixx               \r\n\r\n\r\n\r\n\r\n\r\nDiscord\r\nht" +
-    "tps://discord.gg/XwgWYHCbd6";
+            this.textBox1.BackColor = System.Drawing.Color.Gray;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(8, 110);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(224, 186);
+            this.textBox1.TabIndex = 8;
+            this.textBox1.Text = "LowPY v1.0 - I like strawberries\r\n\r\nterribly designed by : zeropixx#5201\r\n\r\nteste" +
+    "d by : noone except me\r\n\r\nsegoe ui light is a cool font\r\n\r\n\r\ncontact me : https:" +
+    "//www.discord.gg/4rswhxr8s3";
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(3, 302);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 51);
+            this.button1.Size = new System.Drawing.Size(228, 51);
             this.button1.TabIndex = 7;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
@@ -112,7 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(281, 385);
+            this.ClientSize = new System.Drawing.Size(266, 385);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -133,6 +136,6 @@
         private Label label1;
         private Label label2;
         private Button button1;
-        private Label label3;
+        private TextBox textBox1;
     }
 }

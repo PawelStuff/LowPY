@@ -58,12 +58,13 @@
             // 
             // cmdRunScript
             // 
+            this.cmdRunScript.BackColor = System.Drawing.Color.Gray;
             this.cmdRunScript.Location = new System.Drawing.Point(13, 95);
             this.cmdRunScript.Name = "cmdRunScript";
             this.cmdRunScript.Size = new System.Drawing.Size(164, 54);
             this.cmdRunScript.TabIndex = 2;
             this.cmdRunScript.Text = "Run Open Script\r\n(embeded engine)";
-            this.cmdRunScript.UseVisualStyleBackColor = true;
+            this.cmdRunScript.UseVisualStyleBackColor = false;
             this.cmdRunScript.Click += new System.EventHandler(this.CmdRunScript_Click);
             // 
             // pictureBox1
@@ -76,6 +77,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
@@ -121,7 +123,7 @@
             // 
             // localpyinstall
             // 
-            this.localpyinstall.BackColor = System.Drawing.Color.Silver;
+            this.localpyinstall.BackColor = System.Drawing.Color.Gray;
             this.localpyinstall.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.localpyinstall.Location = new System.Drawing.Point(184, 96);
             this.localpyinstall.Margin = new System.Windows.Forms.Padding(4);

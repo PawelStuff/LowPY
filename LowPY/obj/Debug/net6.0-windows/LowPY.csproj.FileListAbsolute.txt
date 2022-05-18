@@ -32,7 +32,6 @@ D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.pytoexebuilder.resourc
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.pytoexesetup.resources
 D:\VS Projects\LowPY\LowPY\bin\Debug\net6.0-windows\DiscordRPC.dll
 D:\VS Projects\LowPY\LowPY\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
-D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.csproj.AssemblyReference.cache
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.help.resources
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.editorhelp.resources
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.scriptrunnerhelp.resources
