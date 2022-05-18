@@ -202,7 +202,7 @@ namespace LowPY
                             }
 
                             FileInfo fileInfo = new FileInfo(writepath);
-                            string buildpath = fileInfo.DirectoryName; // contains "C:\MyDirectory"
+                            string buildpath = fileInfo.DirectoryName;
 
                             buildpath += @"\__pycache__";
 
