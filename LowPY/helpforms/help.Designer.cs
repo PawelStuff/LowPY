@@ -185,6 +185,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "help";
             this.Text = "LowPY - Help / Manual";
             this.Load += new System.EventHandler(this.help_Load);

@@ -129,6 +129,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "pytoexesetup";
             this.Text = "PyInstaller Setup";
             this.Load += new System.EventHandler(this.pytoexesetup_Load);

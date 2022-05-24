@@ -6,7 +6,14 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release</Configurations>
+    <Platforms>AnyCPU</Platforms>
+    <ApplicationIcon>lpy_logo_dPZ_icon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="lpy_logo_dPZ_icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ConsoleControl" Version="1.3.0" />

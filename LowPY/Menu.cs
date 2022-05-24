@@ -107,11 +107,12 @@ namespace LowPY
             sw.WriteLine("# ----------------------------");
             sw.WriteLine("# LowPY Script Template");
             sw.WriteLine("# ----------------------------");
-            sw.WriteLine();
-            sw.WriteLine("x = 1");
             sw.WriteLine("");
-            sw.WriteLine("print('the value of x is ;')");
-            sw.WriteLine("print(x)");
+            sw.WriteLine("def example():");
+            sw.WriteLine("    name = 'LowPY'");
+            sw.WriteLine("    print('Hello ' + name + '!')");
+            sw.WriteLine("");
+            sw.WriteLine("example()");
             sw.Close();
 
         }

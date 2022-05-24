@@ -15,10 +15,10 @@ D:\VS Projects\LowPY\LowPY\bin\Release\net6.0-windows\IronPython.Modules.dll
 D:\VS Projects\LowPY\LowPY\bin\Release\net6.0-windows\IronPython.SQLite.dll
 D:\VS Projects\LowPY\LowPY\bin\Release\net6.0-windows\IronPython.dll
 D:\VS Projects\LowPY\LowPY\bin\Release\net6.0-windows\Newtonsoft.Json.dll
-D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.csproj.AssemblyReference.cache
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.About.resources
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.Editor.resources
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.helpforms.editorhelp.resources
+D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.helpforms.fctbhelp.resources
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.helpforms.help.resources
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.helpforms.pytoexehelp.resources
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.helpforms.scriptrunnerhelp.resources

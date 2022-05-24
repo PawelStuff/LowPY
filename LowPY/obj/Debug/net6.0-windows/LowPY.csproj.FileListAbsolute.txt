@@ -38,3 +38,4 @@ D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.scriptrunner
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.tkinterhelp.resources
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.pytoexehelp.resources
 D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.helpforms.fctbhelp.resources
+D:\VS Projects\LowPY\LowPY\obj\Debug\net6.0-windows\LowPY.csproj.AssemblyReference.cache
