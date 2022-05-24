@@ -38,3 +38,4 @@ D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.dll
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\ref\LowPY.dll
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.pdb
 D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.genruntimeconfig.cache
+D:\VS Projects\LowPY\LowPY\obj\Release\net6.0-windows\LowPY.csproj.AssemblyReference.cache
