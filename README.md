@@ -13,3 +13,10 @@ containing a (really bad) embedded Python engine using IronPython<br />
 LowPY is only 7mb as a whole (compiled build)<br />
 and takes barely 35mb of RAM while running<br />
 ![unknown (1)](https://user-images.githubusercontent.com/89011403/170501611-6305f7cd-e276-45ab-8f61-c88b3eaafaa3.png)
+
+# Fast
+Loads up the editor instantly even on 2gb of ram<br />
+ ![Sequence  1](https://user-images.githubusercontent.com/89011403/170504329-b3d5cd4d-15f7-4bb6-bc78-f5233fbbd60b.gif)
+ 
+# Need help / has questions?
+Join the discord : https://www.discord.gg/4rSWhxR8s3<br />
