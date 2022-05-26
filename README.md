@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Get the latest release</b><br>
-  <a href="#">Releases tab</a> |
+  <a href="#">Latest release</a>
   <br><br>
 </p>
 
