@@ -1,45 +1,22 @@
-<img src="https://cdn.discordapp.com/attachments/578453280405848064/965905027929636864/github_lowpy_label_thingy.png">
-<h1 align="center">get the latest release compile : https://github.com/zeropixx/LowPY/releases</h1>
+![alt text](https://github.com/zeropixx/LowPY/blob/main/github%20lowpy%20label%20thingy.png)
+<table align="center"><tr><td align="center" width="9999">
+  
+# Get the latest release
+https://github.com/zeropixx/LowPY/releases/latest<br />
+  
+# About
+LowPY is a lightweight & fast package ment to easly edit and launch .py files quickly<br />
+containing a (really bad) embedded Python engine using IronPython<br />
+![editor](https://user-images.githubusercontent.com/89011403/170488950-a2e0390c-03e1-42f3-9157-8e19018429c3.gif)
+  
+# Lightweight
+LowPY is only 7mb as a whole (compiled build)<br />
+and takes barely 35mb of RAM while running<br />
+![unknown (1)](https://user-images.githubusercontent.com/89011403/170501611-6305f7cd-e276-45ab-8f61-c88b3eaafaa3.png)
 
-# More and about
-LowPY requires .NET Framework 6.0 installed (and for local install running Python 3.10)<br />
-as of current version ("Strawberry" and further) LowPY is ment to be more of a script editor than a entire ide like thing<br />
-that doesnt mean you cannot write scripts in it but it isnt ideal<br />
-<br />
-# Reporting crashes and help
-if you need any help with LowPY or any other of my works you can get help on my discord <br />
-permament invite : https://discord.com/invite/XwgWYHCbd6 <br />
-the version name aswell as this invite can be found inside LowPY by clicking the LowPY logo in the editor 6 times <br />
-<br />
-# The editor itself
-<img src="https://cdn.discordapp.com/attachments/578453280405848064/965916913106559016/unknown.png">
-as of the editor of the version "Strawberry" is pretty basic <br />
-it contains your basic stuff like saving and of course executing <br />
-"Run with local Python 3.10 install" is in case the built in Script Runner doesnt work <br />
-about the said script runner bellow <br />
-<br />
-
-# Script runner
-<img src="https://cdn.discordapp.com/attachments/578453280405848064/966387402513977384/unknown.png">
-the script runner runs your currently loaded script into the editor, gives back syntax when the script contains a error <br />
-in case the "Script runner" doesnt work theres the "Run with local Python 3.10 install" option which as mentioned before <br />
-opens your local Python 3.10 install with the currently loaded script <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-end of the ugly readme ..
+# Fast
+Loads up the editor instantly even on 2gb of ram<br />
+ ![Sequence  1](https://user-images.githubusercontent.com/89011403/170504329-b3d5cd4d-15f7-4bb6-bc78-f5233fbbd60b.gif)
+ 
+# Need help / has questions?
+Join the discord : https://www.discord.gg/4rSWhxR8s3<br />
