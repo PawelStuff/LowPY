@@ -17,6 +17,7 @@ and takes barely 35mb of RAM while running<br />
 # Fast
 Loads up the editor instantly even on 2gb of ram<br />
  ![Sequence  1](https://user-images.githubusercontent.com/89011403/170504329-b3d5cd4d-15f7-4bb6-bc78-f5233fbbd60b.gif)
+this gif for sure isnt the best way to show it<br />
  
 # Need help / has questions?
 Join the discord : https://www.discord.gg/4rSWhxR8s3<br />
