@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label2);
@@ -65,7 +65,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Gray;
+            this.textBox1.BackColor = System.Drawing.Color.DarkGray;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(8, 110);
@@ -74,18 +74,17 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(224, 186);
             this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "LowPY v1.0 - I like strawberries\r\n\r\nterribly designed by : zeropixx#5201\r\n\r\nteste" +
-    "d by : noone except me\r\n\r\nsegoe ui light is a cool font\r\n\r\n\r\ncontact me : https:" +
-    "//www.discord.gg/4rswhxr8s3";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
             this.button1.Location = new System.Drawing.Point(3, 302);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(228, 51);
             this.button1.TabIndex = 7;
             this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2

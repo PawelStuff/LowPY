@@ -44,7 +44,7 @@ namespace LowPY
 
             string filename = Path.GetFileName(writepath);
 
-            client = new DiscordRpcClient("972488504611332186");
+            client = new DiscordRpcClient("981283103093964830");
             client.Initialize();
 
             client.SetPresence(new RichPresence()

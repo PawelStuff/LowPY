@@ -1,3 +1,4 @@
+using DiscordRPC;
 using Microsoft.Win32;
 
 namespace LowPY
@@ -8,8 +9,9 @@ namespace LowPY
         Microsoft.Win32.RegistryKey key;
 
         public static string filePath;
-        float timesclicked;
-        
+
+        private DiscordRpcClient client;
+
 
         public Menu()
         {
@@ -51,6 +53,8 @@ namespace LowPY
                         fileStream.Close();
 
                         var editor = new Editor();
+
+                        client.Deinitialize();
 
                         editor.Show();
 
@@ -94,6 +98,8 @@ namespace LowPY
 
                     var editor = new Editor();
 
+                    client.Deinitialize();
+
                     editor.Show();
 
                 }
@@ -120,6 +126,22 @@ namespace LowPY
         private void Menu_Load(object sender, EventArgs e)
         {
             this.TopMost = true;
+
+            client = new DiscordRpcClient("981283103093964830");
+            client.Initialize();
+
+            client.SetPresence(new RichPresence()
+            {
+                Details = "Currently idle.. (Menu)",
+                State = "Editing file : None",
+
+                Assets = new Assets()
+                {
+                    LargeImageKey = "lpy_logo",
+                    LargeImageText = "https://github.com/zeropixx/LowPY",
+                    //SmallImageKey = "lpy_logo"
+                }
+            });
         }
     }
 }
