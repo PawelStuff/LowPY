@@ -242,7 +242,7 @@
         '\'',
         '\''};
             this.editorTextbox.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>.+)\r\n";
-            this.editorTextbox.AutoScrollMinSize = new System.Drawing.Size(241, 18);
+            this.editorTextbox.AutoScrollMinSize = new System.Drawing.Size(212, 18);
             this.editorTextbox.BackBrush = null;
             this.editorTextbox.BackColor = System.Drawing.Color.DimGray;
             this.editorTextbox.BracketsHighlightStrategy = FastColoredTextBoxNS.BracketsHighlightStrategy.Strategy2;
@@ -342,6 +342,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1156, 682);
+            this.ControlBox = false;
             this.Controls.Add(this.pythonconsoleButton);
             this.Controls.Add(this.pytoexeButton);
             this.Controls.Add(this.label5);
@@ -359,8 +360,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.MaximizeBox = false;
             this.Name = "Editor";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.Editor_Load);
